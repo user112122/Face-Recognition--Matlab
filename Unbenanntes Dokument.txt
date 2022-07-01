@@ -93,7 +93,7 @@ while true
 
     es=imresize(es,[227 227]);
 
-    label=classify(myNet1.0,es);
+    label=classify(myNet1,es);
 
     image(e);
 
