@@ -62,7 +62,7 @@ layers(23)=fullyConnectedLayer(2);
 
 layers(25)=classificationLayer;
 
-allImages=imageDatastore('datastorage','IncludeSubfolders',true, 'LabelSource','foldernames');
+allImages=imageDatastore('FaceDetection','IncludeSubfolders',true, 'LabelSource','foldernames');
 
 opts=trainingOptions('sgdm','InitialLearnRate',0.001,'MaxEpochs',20,'MiniBatchSize',64);
 
